@@ -1,15 +1,14 @@
 {
-   "name": "chapter-04",
-   "description": "Don't take a photograph, make it - An app for
-     photographers",
+   "name": "PhotoShareapp",
+   "description": "just make photo and share",
    "license": "MIT",
    "author": {
-     "name": "Fernando Monteiro",
-     "url": "https://github.com/newaeonweb/node-6-blueprints"
+     "name": "Igor-Kwin",
+     "url": "https://github.com/Igor-Kwin/PhotoShareapp.git"
    },
    "repository": {
      "type": "git",
-     "url": "https://github.com/newaeonweb/node-6-blueprints.git"
+     "url": "https://github.com/Igor-Kwin/PhotoShareapp.git"
    },
    "keywords": [
      "MVC",
