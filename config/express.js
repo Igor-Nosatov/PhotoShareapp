@@ -1,6 +1,5 @@
 var express = require('express');
 var glob = require('glob');
-
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -13,7 +12,7 @@ module.exports = function(app, config) {
   var env = process.env.NODE_ENV || 'development';
   app.locals.ENV = env;
   app.locals.ENV_DEVELOPMENT = env == 'development';
-  
+
   app.engine('swig', swig.renderFile);
   if(env == 'development'){
     app.set('view cache', false);
@@ -43,7 +42,7 @@ module.exports = function(app, config) {
     err.status = 404;
     next(err);
   });
-  
+
   if(app.get('env') === 'development'){
     app.use(function (err, req, res, next) {
       res.status(err.status || 500);
@@ -64,5 +63,4 @@ module.exports = function(app, config) {
       });
   });
 
-  return app;
 };
